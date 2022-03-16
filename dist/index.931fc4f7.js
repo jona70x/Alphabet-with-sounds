@@ -1,0 +1,2 @@
+"use strict";const playSound=function(e){const n=document.querySelector(`audio[data-key="${e.keyCode}"]`),t=document.querySelector(`.key[data-key="${e.keyCode}"]`);n&&(n.currentTime=0,n.play(),t.classList.add("playing"))};window.addEventListener("keydown",playSound);const removeTransition=function(e){"transform"===e.propertyName&&this.classList.remove("playing")},keys=document.querySelectorAll(".key");keys.forEach((e=>e.addEventListener("transitionend",removeTransition)));
+//# sourceMappingURL=index.931fc4f7.js.map
